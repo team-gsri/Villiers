@@ -1,0 +1,37 @@
+name: release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    path: [ 'CONT_Villiers.Altis/**' ]
+
+jobs:
+  release:
+    runs-on: self-hosted
+    steps:
+
+    - name: Checkout files
+      uses: actions/checkout@v2
+
+    - name: Compile mission
+      run: |
+        ${env:MISSION_PATH} = "${env:GITHUB_WORKSPACE}\CONT_Villiers.Altis"
+        & "${env:ARMA3TOOLS}/CfgConvert/CfgConvert.exe" -bin -dst "${env:MISSION_PATH}/mission.sqm" "${env:MISSION_PATH}/mission.sqm"
+        & "${env:ARMA3TOOLS}/FileBank/FileBank.exe" -dst "${env:GITHUB_WORKSPACE}" "${env:MISSION_PATH}"
+        $env:PATH
+
+    - name: Upload pbo files
+      uses: actions/upload-artifact@v2
+      with:
+        name: mission
+        path: '*.pbo'
+      
+    - name: Create Github release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: >
+        gh release create "ver-${env:GITHUB_SHA}" (Get-Item *.pbo)
+        --title "Version ${env:GITHUB_SHA}"
+        --generate-notes
+        --repo ${{ github.repository }}        

@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [ main ]
-    path: [ 'CONT_Villiers.Altis/**' ]
+    path: [ 'CONT_Scorpion.Altis/**' ]
 
 jobs:
   release:
@@ -16,7 +16,7 @@ jobs:
 
     - name: Compile mission
       run: |
-        ${env:MISSION_PATH} = "${env:GITHUB_WORKSPACE}\CONT_Villiers.Altis"
+        ${env:MISSION_PATH} = "${env:GITHUB_WORKSPACE}\CONT_Scorpion.Altis"
         & "${env:ARMA3TOOLS}/CfgConvert/CfgConvert.exe" -bin -dst "${env:MISSION_PATH}/mission.sqm" "${env:MISSION_PATH}/mission.sqm"
         & "${env:ARMA3TOOLS}/FileBank/FileBank.exe" -dst "${env:GITHUB_WORKSPACE}" "${env:MISSION_PATH}"
         $env:PATH

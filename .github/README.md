@@ -1,6 +1,6 @@
-# GSRI Villiers
+# GSRI Scorpion
 
-Villiers is a recurrent mission set in Altis, where french forces of `Groupe de Combat Aéroporté` (GCAP) teams up with LDF to retake the island after a CSAT invasion.
+Scorpion is a recurrent mission set in Altis, where french forces of `Groupe de Combat Aéroporté` (GCAP) teams up with LDF to retake the island after a CSAT invasion.
 
 ## Rules and standards
 

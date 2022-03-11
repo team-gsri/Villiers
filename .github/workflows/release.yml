@@ -3,7 +3,7 @@ name: release
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [master]
     path: [ 'CONT_Scorpion.Altis/**' ]
 
 jobs:
@@ -11,27 +11,22 @@ jobs:
     runs-on: self-hosted
     steps:
 
-    - name: Checkout files
-      uses: actions/checkout@v2
+      - name: Checkout files
+        uses: actions/checkout@v2
 
-    - name: Compile mission
-      run: |
-        ${env:MISSION_PATH} = "${env:GITHUB_WORKSPACE}\CONT_Scorpion.Altis"
-        & "${env:ARMA3TOOLS}/CfgConvert/CfgConvert.exe" -bin -dst "${env:MISSION_PATH}/mission.sqm" "${env:MISSION_PATH}/mission.sqm"
-        & "${env:ARMA3TOOLS}/FileBank/FileBank.exe" -dst "${env:GITHUB_WORKSPACE}" "${env:MISSION_PATH}"
-        $env:PATH
+      - name: Make mission pbo
+        uses: team-gsri/actions-build-mission@0.0.1
+        with:
+          source: ./CONT_Scorpion.Altis
+          target: ./
 
-    - name: Upload pbo files
-      uses: actions/upload-artifact@v2
-      with:
-        name: mission
-        path: '*.pbo'
-      
-    - name: Create Github release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: >
-        gh release create "ver-${env:GITHUB_SHA}" (Get-Item *.pbo)
-        --title "Version ${env:GITHUB_SHA}"
-        --generate-notes
-        --repo ${{ github.repository }}        
+      - name: Upload PBO to github
+        uses: actions/upload-artifact@v2
+        with:
+          name: mission
+          path: ./*.pbo
+
+      - name: Create Github Release
+        uses: arwynfr/actions-conventional-versioning@0.1.0
+        with:
+            pattern: $(Convert-Path *.pbo)

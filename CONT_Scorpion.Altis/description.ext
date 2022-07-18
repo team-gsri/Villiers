@@ -1,0 +1,9 @@
+class CfgFunctions {
+	class GSRI {
+		class respawn {
+			file="functions\respawn";
+			class respawnVehicle {};
+			class getPassengerCount {};
+		};
+	};
+};

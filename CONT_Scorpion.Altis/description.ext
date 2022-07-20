@@ -1,14 +1,19 @@
 class CfgFunctions {
-	class GSRI {
-		class autorespawn {
-			file = "functions\autorespawn";
-			class ClassSiteOperation {};
-			class ClassTypeOpreation {};
-		}
-		class respawn {
-			file="functions\respawn";
-			class respawnVehicle {};
-			class getPassengerCount {};
+	class LOG {
+		class logger {			
+			file = "functions\logger";
+			class classEvent {};
+			class classEventHandler {};
+			class classLogger {};
+			class classFormatterSimple {};
+			class classSinkDiagLog {};
+			class classSinkSystemChat {};
 		};
 	};
+};
+
+class CfgLogger {
+	severityThreshold = "INFO";
+	formatter = "LOG_fnc_classFormatterSimple";
+	sinks[] = { "LOG_fnc_classSinkDiagLog", "LOG_fnc_classSinkSystemChat" };
 };

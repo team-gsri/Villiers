@@ -1,6 +1,6 @@
 class CfgFunctions {
-	class LOG {
-		class logger {			
+	class log {
+		class logger {
 			file = "functions\logger";
 			class classEvent {};
 			class classEventHandler {};
@@ -10,10 +10,22 @@ class CfgFunctions {
 			class classSinkSystemChat {};
 		};
 	};
+	class GSRI {
+		class autorespawn {
+			file = "functions\autorespawn";
+			class classInfantryFactory {};
+			class classVehicleFactory {};
+			class classSideGeo {};
+			class classEastManager {};
+			class classIndeManager {};
+		};
+	};
 };
 
 class CfgLogger {
 	severityThreshold = "INFO";
 	formatter = "LOG_fnc_classFormatterSimple";
-	sinks[] = { "LOG_fnc_classSinkDiagLog", "LOG_fnc_classSinkSystemChat" };
+	sinks[] = {
+		"LOG_fnc_classSinkDiagLog", "LOG_fnc_classSinkSystemChat"
+	};
 };

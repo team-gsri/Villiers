@@ -25,12 +25,16 @@ _this set ["+Reinforce", {
 
 _this set ["#Count", {
 	{
+		private _logger = _this get "_logger";
+		["Counting vehicles", _logger] call (_logger get "+TRACE");
 		alive _x && side _x == _this get "_side" && _x isKindOf _this get "_classname";
 	} count vehicles;
 }];
 
 _this set ["#Spawn", {
 	params ["_geo", "_this"];
+	private _logger = _this get "_logger";
+	["Spawning vehicle", _logger] call (_logger get "+TRACE");
 	private _vehicle = (_this get "_classname") createVehicle (_geo get "_home");
 	private _crew = createVehicleCrew _vehicle;
 	[_crew, _geo] call (_geo get "+AddWaypoint");

@@ -26,6 +26,6 @@ class CfgLogger {
 	severityThreshold = "INFO";
 	formatter = "LOG_fnc_classFormatterSimple";
 	sinks[] = {
-		"LOG_fnc_classSinkDiagLog", "LOG_fnc_classSinkSystemChat"
+		"LOG_fnc_classSinkDiagLog"
 	};
 };

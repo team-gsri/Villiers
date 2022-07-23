@@ -14,4 +14,10 @@ _this set ["+AddWaypoint", {
 	_waypoint;
 }];
 
+_this set ["+GetRandomOrigin", {
+	private _distance = random (_this get "_radius");
+	private _direction = random 360;
+	(_this get "_home") getPos [_distance, _direction];
+}];
+
 _this;

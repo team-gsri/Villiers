@@ -11,7 +11,7 @@ _this set ["+Reinforce", {
 	private _geo = _this get "_geo";
 	{
 		[_geo, _x] call (_x get "+Reinforce");
-	} forEach _this get "_factories";
+	} forEach (_this get "_factories");
 }];
 
 _this;

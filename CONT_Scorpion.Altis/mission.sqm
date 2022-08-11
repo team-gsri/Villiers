@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=730;
+		nextID=772;
 	};
 	class Camera
 	{
-		pos[]={9531.3193,240.51178,15849.329};
-		dir[]={-0.82173347,-0.51201528,0.25018904};
-		up[]={-0.48981568,0.8589763,0.14913169};
-		aside[]={0.29126415,1.4901161e-008,0.95664275};
+		pos[]={9712.1357,299.38809,15832.42};
+		dir[]={-0.1045262,-0.42248946,0.90032744};
+		up[]={-0.04872299,0.90636528,0.41967314};
+		aside[]={0.99333113,1.0834628e-007,0.11532383};
 	};
 };
 binarizationWanted=0;
@@ -32993,32 +32993,31 @@ class Mission
 						class Item0
 						{
 							dataType="Marker";
-							position[]={10918.164,76.013,15963.847};
+							position[]={10141.646,119.02466,15294.289};
 							name="marker_42";
 							text="3EME COMPAGNIE DE COMBAT";
 							type="o_mech_inf";
 							colorName="ColorEAST";
 							id=9316;
-							atlOffset=-0.00047302246;
 						};
 						class Item1
 						{
 							dataType="Marker";
-							position[]={10922.98,76.834999,15987.925};
+							position[]={10146.463,109.3623,15318.367};
 							name="marker_43";
 							type="group_4";
 							id=9317;
-							atlOffset=-0.69822693;
+							atlOffset=-11.528847;
 						};
 						class Item2
 						{
 							dataType="Marker";
-							position[]={10687.834,64.287109,16345.787};
+							position[]={9939.127,97.526367,15708.316};
 							name="marker_40";
 							type="mil_arrow2";
 							angle=342.4744;
 							id=9320;
-							atlOffset=-17.24794;
+							atlOffset=-38.379013;
 						};
 						class Item3
 						{
@@ -33039,12 +33038,12 @@ class Mission
 						};
 					};
 					id=9215;
-					atlOffset=9.2744217;
+					atlOffset=-5.5222397;
 				};
 				class Item2
 				{
 					dataType="Trigger";
-					position[]={10724.026,86.229759,15998.479};
+					position[]={9837.8359,114.01929,15538.957};
 					class Attributes
 					{
 						name="markerEast";
@@ -33058,7 +33057,7 @@ class Mission
 				};
 			};
 			id=751;
-			atlOffset=11.877045;
+			atlOffset=54.780682;
 		};
 		class Item2
 		{
@@ -33086,7 +33085,7 @@ class Mission
 				class Item1
 				{
 					dataType="Trigger";
-					position[]={10566.053,73.261093,16982.203};
+					position[]={9716.625,82.290977,16195.305};
 					class Attributes
 					{
 						name="markerTarget";
@@ -33100,7 +33099,7 @@ class Mission
 				};
 			};
 			id=750;
-			atlOffset=7.218586;
+			atlOffset=1.3530273;
 		};
 		class Item3
 		{
@@ -33131,7 +33130,7 @@ class Mission
 							position[]={10485.975,96.420242,17437.961};
 							name="marker_38";
 							type="mil_arrow2";
-							angle=160.93063;
+							angle=195.62283;
 							id=9315;
 						};
 						class Item2

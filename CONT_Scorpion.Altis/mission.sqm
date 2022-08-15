@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=9362;
+		nextID=9363;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=772;
+		nextID=793;
 	};
 	class Camera
 	{
-		pos[]={9712.1357,299.38809,15832.42};
-		dir[]={-0.1045262,-0.42248946,0.90032744};
-		up[]={-0.04872299,0.90636528,0.41967314};
-		aside[]={0.99333113,1.0834628e-007,0.11532383};
+		pos[]={1056.4797,42.493542,26940.324};
+		dir[]={0.0021796094,-0.64598799,0.76335162};
+		up[]={0.0018445214,0.76334518,0.64598942};
+		aside[]={1.0000024,9.3168637e-009,-0.0028553333};
 	};
 };
 binarizationWanted=0;
@@ -10198,7 +10198,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=6;
+		items=7;
 		class Item0
 		{
 			dataType="Layer";
@@ -33007,7 +33007,7 @@ class Mission
 							name="marker_43";
 							type="group_4";
 							id=9317;
-							atlOffset=-11.528847;
+							atlOffset=-11.528854;
 						};
 						class Item2
 						{
@@ -33054,10 +33054,11 @@ class Mission
 					};
 					id=9348;
 					type="EmptyDetectorArea10x10";
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			id=751;
-			atlOffset=54.780682;
+			atlOffset=54.780674;
 		};
 		class Item2
 		{
@@ -33130,7 +33131,7 @@ class Mission
 							position[]={10485.975,96.420242,17437.961};
 							name="marker_38";
 							type="mil_arrow2";
-							angle=195.62283;
+							angle=195.62282;
 							id=9315;
 						};
 						class Item2
@@ -33254,6 +33255,19 @@ class Mission
 			};
 			id=9350;
 			type="EmptyDetectorArea10x10";
+		};
+		class Item6
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={1064.274,0,26985.045};
+			};
+			name="HC";
+			isPlayable=1;
+			id=9362;
+			type="HeadlessClient_F";
+			atlOffset=185.97;
 		};
 	};
 };

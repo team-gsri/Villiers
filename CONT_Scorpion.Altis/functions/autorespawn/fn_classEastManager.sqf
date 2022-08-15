@@ -2,9 +2,9 @@ _this = createHashMap;
 
 _this set ["_geo", [position markerEast, position markerTarget, 300] call GSRI_fnc_classSideGeo];
 _this set ["_factories", [
-	[east, 88] call GSRI_fnc_classInfantryFactory,
-	[east, 4, "O_APC_Wheeled_02_rcws_v2_F"] call GSRI_fnc_classVehicleFactory,
-	[east, 2, "O_Heli_Light_02_dynamicLoadout_F"] call GSRI_fnc_classVehicleFactory
+	[east, 60] call GSRI_fnc_classInfantryFactory,
+	[east, 3, "O_APC_Wheeled_02_rcws_v2_F"] call GSRI_fnc_classVehicleFactory,
+	[east, 1, "O_Heli_Light_02_dynamicLoadout_F"] call GSRI_fnc_classVehicleFactory
 ]];
 
 _this set ["+Reinforce", {

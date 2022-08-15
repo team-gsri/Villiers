@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=793;
+		nextID=835;
 	};
 	class Camera
 	{
-		pos[]={1056.4797,42.493542,26940.324};
-		dir[]={0.0021796094,-0.64598799,0.76335162};
-		up[]={0.0018445214,0.76334518,0.64598942};
-		aside[]={1.0000024,9.3168637e-009,-0.0028553333};
+		pos[]={9109.6035,40.059483,21558.221};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
@@ -331,9 +331,13 @@ class ScenarioData
 		maxPlayers=32;
 	};
 	wreckManagerMode=1;
-	wreckRemovalMaxTime=3600;
+	wreckLimit=5;
+	wreckRemovalMinTime=60.000004;
+	wreckRemovalMaxTime=60.000004;
 	corpseManagerMode=1;
-	corpseLimit=50;
+	corpseLimit=10;
+	corpseRemovalMinTime=60.000004;
+	corpseRemovalMaxTime=60.000004;
 };
 class CustomAttributes
 {
@@ -1806,7 +1810,7 @@ class CustomAttributes
 																			"STRING"
 																		};
 																	};
-																	value="tf47_at4_heat";
+																	value="AMF_AT4CS_Loaded";
 																};
 															};
 															class Item1
@@ -10210,7 +10214,6 @@ class Mission
 				{
 					dataType="Layer";
 					name="Players";
-					state=1;
 					class Entities
 					{
 						items=1;
@@ -11251,11 +11254,11 @@ class Mission
 							{
 							};
 							id=600;
-							atlOffset=185.97;
+							atlOffset=-9.5367432e-007;
 						};
 					};
 					id=632;
-					atlOffset=185.97;
+					atlOffset=-9.5367432e-007;
 				};
 				class Item1
 				{
@@ -31944,7 +31947,7 @@ class Mission
 				};
 			};
 			id=444;
-			atlOffset=-125.21142;
+			atlOffset=-95.116669;
 		};
 		class Item1
 		{
@@ -33043,7 +33046,7 @@ class Mission
 				class Item2
 				{
 					dataType="Trigger";
-					position[]={9837.8359,114.01929,15538.957};
+					position[]={10200.211,107.61826,15171.238};
 					class Attributes
 					{
 						name="markerEast";
@@ -33054,11 +33057,10 @@ class Mission
 					};
 					id=9348;
 					type="EmptyDetectorArea10x10";
-					atlOffset=-7.6293945e-006;
 				};
 			};
 			id=751;
-			atlOffset=54.780674;
+			atlOffset=66.220184;
 		};
 		class Item2
 		{
@@ -33086,7 +33088,7 @@ class Mission
 				class Item1
 				{
 					dataType="Trigger";
-					position[]={9716.625,82.290977,16195.305};
+					position[]={9411.5518,118.91559,15912.265};
 					class Attributes
 					{
 						name="markerTarget";
@@ -33100,7 +33102,7 @@ class Mission
 				};
 			};
 			id=750;
-			atlOffset=1.3530273;
+			atlOffset=6.0400696;
 		};
 		class Item3
 		{
@@ -33131,7 +33133,7 @@ class Mission
 							position[]={10485.975,96.420242,17437.961};
 							name="marker_38";
 							type="mil_arrow2";
-							angle=195.62282;
+							angle=195.6228;
 							id=9315;
 						};
 						class Item2
@@ -33244,7 +33246,7 @@ class Mission
 		class Item5
 		{
 			dataType="Trigger";
-			position[]={10239.634,137.69946,17904.588};
+			position[]={10386.108,118.13242,17932.217};
 			class Attributes
 			{
 				name="markerIndep";
@@ -33255,6 +33257,7 @@ class Mission
 			};
 			id=9350;
 			type="EmptyDetectorArea10x10";
+			atlOffset=7.6293945e-006;
 		};
 		class Item6
 		{

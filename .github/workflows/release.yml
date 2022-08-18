@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
   push:
     branches: [master]
-    path: [ 'CONT_Scorpion.Altis/**' ]
+    paths: [ 'CONT_Scorpion.Altis/**' ]
 
 jobs:
   release:
-    runs-on: self-hosted
+    runs-on: [self-hosted, arma-tools]
     steps:
 
       - name: Checkout files

@@ -1,9 +1,9 @@
 {
-    missionnamespace setVariable [_x, true];
+	missionNamespace setVariable [_x, true];
 } forEach [
-	"BIS_respSpecallow3PPCamera", 		// Allow 3rd person camera
-	"BIS_respSpecShowHeader", 			// top bar of the spectator UI including mission time
-	"BIS_respSpeclists"					// Show list of available units and locations on the left hand side
+	"BIS_respSpecallow3PPCamera",	// Allow 3rd person camera
+	"BIS_respSpecShowHeader",		// top bar of the spectator UI including mission time
+	"BIS_respSpeclists"				// Show list of available units and locations on the left hand side
 ];
 
 player addEventHandler ["Respawn", {
@@ -13,3 +13,5 @@ player addEventHandler ["Respawn", {
 		["ItemMap", "", "TFAR_anprc152", "", "ACE_Altimeter", ""]
 	]);
 }];
+
+[] call GSRI_fnc_initPlayerLocalZeusActions;

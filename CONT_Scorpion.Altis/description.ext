@@ -18,6 +18,7 @@ class CfgFunctions {
 			class classSideGeo {};
 			class classEastManager {};
 			class classIndeManager {};
+			class initPlayerLocalZeusActions {};
 		};
 	};
 };

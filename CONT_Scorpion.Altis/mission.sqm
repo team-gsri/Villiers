@@ -16,13 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=877;
+		nextID=898;
 	};
 	class Camera
 	{
-		pos[]={9109.6035,40.059483,21558.221};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710671,0.70710683};
+		pos[]={9192.3486,30.942387,21587.725};
+		dir[]={0.34115213,-0.58646727,-0.73463529};
+		up[]={0.24701333,0.80997026,-0.53191537};
+		aside[]={-0.90698451,4.744652e-008,-0.42118797};
 	};
 };
 binarizationWanted=0;
@@ -368,7 +369,7 @@ class CustomAttributes
 										class data
 										{
 											singleType="STRING";
-											value="Fusilier";
+											value="Equipage véhicule";
 										};
 									};
 									class Item1
@@ -3443,7 +3444,7 @@ class CustomAttributes
 										class data
 										{
 											singleType="STRING";
-											value="Infirmier";
+											value="Médecin";
 										};
 									};
 									class Item1
@@ -21081,7 +21082,7 @@ class Mission
 																singleType="ARRAY";
 																class value
 																{
-																	items=43;
+																	items=44;
 																	class Item0
 																	{
 																		class data
@@ -21424,6 +21425,14 @@ class Mission
 																		{
 																			singleType="STRING";
 																			value="ACE_personalAidKit";
+																		};
+																	};
+																	class Item43
+																	{
+																		class data
+																		{
+																			singleType="STRING";
+																			value="AMF_AT4CS_Loaded";
 																		};
 																	};
 																};
@@ -21483,7 +21492,7 @@ class Mission
 																singleType="ARRAY";
 																class value
 																{
-																	items=43;
+																	items=44;
 																	class Item0
 																	{
 																		class data
@@ -21826,6 +21835,14 @@ class Mission
 																		{
 																			singleType="STRING";
 																			value="ACE_personalAidKit";
+																		};
+																	};
+																	class Item43
+																	{
+																		class data
+																		{
+																			singleType="STRING";
+																			value="AMF_AT4CS_Loaded";
 																		};
 																	};
 																};
@@ -21885,7 +21902,7 @@ class Mission
 																singleType="ARRAY";
 																class value
 																{
-																	items=43;
+																	items=44;
 																	class Item0
 																	{
 																		class data
@@ -22228,6 +22245,14 @@ class Mission
 																		{
 																			singleType="STRING";
 																			value="ACE_personalAidKit";
+																		};
+																	};
+																	class Item43
+																	{
+																		class data
+																		{
+																			singleType="STRING";
+																			value="AMF_AT4CS_Loaded";
 																		};
 																	};
 																};

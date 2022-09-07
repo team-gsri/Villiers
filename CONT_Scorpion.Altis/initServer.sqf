@@ -1,4 +1,4 @@
-GSRI_FightInProgess = true;
+GSRI_FightInProgess = false;
 publicVariable "GsriFightInProgess";
 
 private _eastManager = [] call GSRI_fnc_classEastManager;

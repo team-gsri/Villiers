@@ -13,6 +13,21 @@ jobs:
 
       - name: Checkout files
         uses: actions/checkout@v2
+        
+      - name: Get new version
+        id: new-version
+        uses: arwynfr/actions-conventional-versioning@0.2.0
+        with:
+            pattern: $(Convert-Path *.pbo)
+            whatif: '$true'
+            
+      - name: Update briefing name
+        shell: pwsh
+        run: >
+          $(Get-Content ./CONT_Scorpion.Altis/mission.sqm) -Replace (
+            'briefingName="[^"]*";',
+            'briefingName="Scorpion ${{ steps.new-version.outputs.next-version }}";'
+          ) | Set-Content -LiteralPath ./CONT_Scorpion.Altis/mission.sqm
 
       - name: Make mission pbo
         uses: team-gsri/actions-build-mission@0.0.1

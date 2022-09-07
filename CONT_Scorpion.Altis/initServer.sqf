@@ -1,5 +1,5 @@
 GSRI_FightInProgess = false;
-publicVariable "GsriFightInProgess";
+publicVariable "GSRI_FightInProgess";
 
 private _eastManager = [] call GSRI_fnc_classEastManager;
 private _indeManager = [] call GSRI_fnc_classIndeManager;

@@ -21,17 +21,10 @@ jobs:
             pattern: $(Convert-Path *.pbo)
             whatif: '$true'
             
-      - name: Update briefing name
-        shell: pwsh
-        run: >
-          $(Get-Content ./CONT_Scorpion.Altis/mission.sqm) -Replace (
-            'briefingName="[^"]*";',
-            'briefingName="Scorpion ${{ steps.new-version.outputs.next-version }}";'
-          ) | Set-Content -LiteralPath ./CONT_Scorpion.Altis/mission.sqm
-
       - name: Make mission pbo
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
+          briefingName: 'Scorpion ${{ steps.new-version.outputs.next-version }}'
           source: ./CONT_Scorpion.Altis
           target: ./
 

@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=961;
+		nextID=982;
 	};
 	class Camera
 	{
-		pos[]={9192.3486,30.942387,21587.725};
-		dir[]={0.34114924,-0.58646208,-0.7346288};
-		up[]={0.24700846,0.8099767,-0.5319066};
-		aside[]={-0.90697527,0,-0.421184};
+		pos[]={9190.9473,22.791903,21614.977};
+		dir[]={0.29155621,-0.31358773,0.90369773};
+		up[]={0.096286573,0.94955361,0.29844531};
+		aside[]={0.95170248,2.3734174e-008,-0.3070454};
 	};
 };
 binarizationWanted=0;
@@ -25517,7 +25517,7 @@ class Mission
 														singleType="ARRAY";
 														class value
 														{
-															items=8;
+															items=16;
 															class Item0
 															{
 																class data
@@ -25531,7 +25531,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=0;
+																	value=1;
 																};
 															};
 															class Item2
@@ -25547,7 +25547,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=0;
+																	value=1;
 																};
 															};
 															class Item4
@@ -25563,7 +25563,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=1;
+																	value=0;
 																};
 															};
 															class Item6
@@ -25579,7 +25579,71 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=1;
+																	value=0;
+																};
+															};
+															class Item8
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetHull";
+																};
+															};
+															class Item9
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item10
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetOpex";
+																};
+															};
+															class Item11
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item12
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetWheel";
+																};
+															};
+															class Item13
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item14
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetTurret";
+																};
+															};
+															class Item15
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
 																};
 															};
 														};
@@ -25682,7 +25746,7 @@ class Mission
 														singleType="ARRAY";
 														class value
 														{
-															items=8;
+															items=16;
 															class Item0
 															{
 																class data
@@ -25696,7 +25760,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=0;
+																	value=1;
 																};
 															};
 															class Item2
@@ -25712,7 +25776,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=0;
+																	value=1;
 																};
 															};
 															class Item4
@@ -25728,7 +25792,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=1;
+																	value=0;
 																};
 															};
 															class Item6
@@ -25744,7 +25808,71 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=1;
+																	value=0;
+																};
+															};
+															class Item8
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetHull";
+																};
+															};
+															class Item9
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item10
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetOpex";
+																};
+															};
+															class Item11
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item12
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetWheel";
+																};
+															};
+															class Item13
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item14
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetTurret";
+																};
+															};
+															class Item15
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
 																};
 															};
 														};
@@ -25847,7 +25975,7 @@ class Mission
 														singleType="ARRAY";
 														class value
 														{
-															items=8;
+															items=16;
 															class Item0
 															{
 																class data
@@ -25861,7 +25989,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=0;
+																	value=1;
 																};
 															};
 															class Item2
@@ -25877,7 +26005,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=0;
+																	value=1;
 																};
 															};
 															class Item4
@@ -25893,7 +26021,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=1;
+																	value=0;
 																};
 															};
 															class Item6
@@ -25909,7 +26037,71 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=1;
+																	value=0;
+																};
+															};
+															class Item8
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetHull";
+																};
+															};
+															class Item9
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item10
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetOpex";
+																};
+															};
+															class Item11
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item12
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetWheel";
+																};
+															};
+															class Item13
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item14
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetTurret";
+																};
+															};
+															class Item15
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
 																};
 															};
 														};
@@ -26012,7 +26204,7 @@ class Mission
 														singleType="ARRAY";
 														class value
 														{
-															items=8;
+															items=16;
 															class Item0
 															{
 																class data
@@ -26026,7 +26218,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=0;
+																	value=1;
 																};
 															};
 															class Item2
@@ -26042,7 +26234,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=0;
+																	value=1;
 																};
 															};
 															class Item4
@@ -26058,7 +26250,7 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=1;
+																	value=0;
 																};
 															};
 															class Item6
@@ -26074,7 +26266,71 @@ class Mission
 																class data
 																{
 																	singleType="SCALAR";
-																	value=1;
+																	value=0;
+																};
+															};
+															class Item8
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetHull";
+																};
+															};
+															class Item9
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item10
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetOpex";
+																};
+															};
+															class Item11
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item12
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetWheel";
+																};
+															};
+															class Item13
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
+																};
+															};
+															class Item14
+															{
+																class data
+																{
+																	singleType="STRING";
+																	value="showCamonetTurret";
+																};
+															};
+															class Item15
+															{
+																class data
+																{
+																	singleType="SCALAR";
+																	value=0;
 																};
 															};
 														};

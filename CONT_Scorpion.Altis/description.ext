@@ -30,3 +30,47 @@ class CfgLogger {
 		"LOG_fnc_classSinkDiagLog"
 	};
 };
+
+class CfgUnitInsignia
+{
+	class GCAP_Blue
+	{
+		displayName = "GCAP bleu";
+		author = "GCAP";
+		texture = "insignias\bleu.paa";
+		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
+		textureVehicle = "";
+	};
+	class GCAP_Red
+	{
+		displayName = "GCAP rouge";
+		author = "GCAP";
+		texture = "insignias\rouge.paa";
+		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
+		textureVehicle = "";
+	};
+	class GCAP_Yellow
+	{
+		displayName = "GCAP jaune";
+		author = "GCAP";
+		texture = "insignias\jaune.paa";
+		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
+		textureVehicle = "";
+	};
+	class GCAP_Green
+	{
+		displayName = "GCAP vert";
+		author = "GCAP";
+		texture = "insignias\vert.paa";
+		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
+		textureVehicle = "";
+	};
+	class GCAP_GSRI
+	{
+		displayName = "GSRI";
+		author = "GSRI";
+		texture = "insignias\gsri.paa";
+		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
+		textureVehicle = "";
+	};
+};

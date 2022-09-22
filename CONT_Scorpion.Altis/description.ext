@@ -16,8 +16,9 @@ class CfgFunctions {
 			class classInfantryFactory {};
 			class classVehicleFactory {};
 			class classSideGeo {};
-			class classEastManager {};
-			class classEastManager2 {};
+			class classEastManager_veh {};
+			class classEastManager_inf {};
+			class classEastManager_hel {};
 			class classIndeManager {};
 			class initPlayerLocalZeusActions {};
 		};

@@ -1,56 +1,52 @@
-private _stopFight = ["stopFight", "Stop CSAT en ville", "", {
-	GSRI_FightInProgess = false;
-	publicVariable "GSRI_FightInProgess";
-	hint "Combat stoppé";
-}, {
-	GSRI_FightInProgess
-}] call ace_interact_menu_fnc_createAction;
+private _always = {
+	true
+};
 
-private _startFight = ["startFight", "Start CSAT en ville", "", {
-	GSRI_FightInProgess = true;
-	publicVariable "GSRI_FightInProgess";
-	hint "Combat démarré";
-}, {
-	!GSRI_FightInProgess
-}] call ace_interact_menu_fnc_createAction;
+private _baseEast = ["GSRI_baseEast", "CSAT", "", {}, _always] call ace_interact_menu_fnc_createAction;
+private _baseGuer = ["GSRI_baseGuer", "LDF", "", {}, _always] call ace_interact_menu_fnc_createAction;
 
-private _stopRenfo = ["stopRenfo", "Stop CSAT renforts", "", {
-	GSRI_RenfoInProgess = false;
-	publicVariable "GSRI_RenfoInProgess";
-	hint "Combat stoppé";
-}, {
-	GSRI_RenfoInProgess
-}] call ace_interact_menu_fnc_createAction;
+private _stopEast = ["GSRI_stopEast", "Stop CSAT", "", {
+	["GSRI_setManagerEnabled", [east, false]] call CBA_fnc_serverEvent;
+	hint "Combat CSAT stoppé";
+}, _always] call ace_interact_menu_fnc_createAction;
 
-private _startRenfo = ["startRenfo", "Start CSAT renforts", "", {
-	GSRI_RenfoInProgess = true;
-	publicVariable "GSRI_RenfoInProgess";
-	hint "Combat démarré";
-}, {
-	!GSRI_RenfoInProgess
-}] call ace_interact_menu_fnc_createAction;
+private _startEast = ["GSRI_startEast", "Start CSAT", "", {
+	["GSRI_setManagerEnabled", [east, true]] call CBA_fnc_serverEvent;
+	hint "Combat CSAT démarré";
+}, _always] call ace_interact_menu_fnc_createAction;
 
-private _stopIndep = ["stopIndep", "Stop LDF renforts", "", {
-	GSRI_IndepInProgess = false;
-	publicVariable "GSRI_IndepInProgess";
-	hint "Renforts stoppés";
-}, {
-	GSRI_IndepInProgess
-}] call ace_interact_menu_fnc_createAction;
+private _eastSpawn1 = ["GSRI_eastSpawn1", "Proche", "", {
+	["GSRI_setManagerGeo", [east, markerEast1]] call CBA_fnc_serverEvent;
+	hint "Respawn CSAT proche";
+}, _always] call ace_interact_menu_fnc_createAction;
 
-private _startIndep = ["startIndep", "Start LDF renforts", "", {
-	GSRI_IndepInProgess = true;
-	publicVariable "GSRI_IndepInProgess";
-	hint "Renforts démarrés";
-}, {
-	!GSRI_IndepInProgess
-}] call ace_interact_menu_fnc_createAction;
+private _eastSpawn2 = ["GSRI_eastSpawn2", "Moyen", "", {
+	["GSRI_setManagerGeo", [east, markerEast2]] call CBA_fnc_serverEvent;
+	hint "Respawn CSAT moyen";
+}, _always] call ace_interact_menu_fnc_createAction;
 
-[["ACE_ZeusActions"], _startFight] call ace_interact_menu_fnc_addActionToZeus;
-[["ACE_ZeusActions"], _stopFight] call ace_interact_menu_fnc_addActionToZeus;
+private _eastSpawn3 = ["GSRI_eastSpawn3", "Lointain", "", {
+	["GSRI_setManagerGeo", [east, markerEast3]] call CBA_fnc_serverEvent;
+	hint "Respawn CSAT lointain";
+}, _always] call ace_interact_menu_fnc_createAction;
 
-[["ACE_ZeusActions"], _startRenfo] call ace_interact_menu_fnc_addActionToZeus;
-[["ACE_ZeusActions"], _stopRenfo] call ace_interact_menu_fnc_addActionToZeus;
+private _stopGuer = ["GSRI_stopGuer", "Stop LDF", "", {
+	["GSRI_setManagerEnabled", [independent, false]] call CBA_fnc_serverEvent;
+	hint "Combat LDF stoppé";
+}, _always] call ace_interact_menu_fnc_createAction;
 
-[["ACE_ZeusActions"], _startIndep] call ace_interact_menu_fnc_addActionToZeus;
-[["ACE_ZeusActions"], _stopIndep] call ace_interact_menu_fnc_addActionToZeus;
+private _startGuer = ["GSRI_startGuer", "Start LDF", "", {
+	["GSRI_setManagerEnabled", [independent, true]] call CBA_fnc_serverEvent;
+	hint "Combat LDF démarré";
+}, _always] call ace_interact_menu_fnc_createAction;
+
+[["ACE_ZeusActions"], _baseEast] call ace_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "GSRI_baseEast"], _stopEast] call ace_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "GSRI_baseEast"], _startEast] call ace_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "GSRI_baseEast"], _eastSpawn1] call ace_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "GSRI_baseEast"], _eastSpawn2] call ace_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "GSRI_baseEast"], _eastSpawn3] call ace_interact_menu_fnc_addActionToZeus;
+
+[["ACE_ZeusActions"], _baseGuer] call ace_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "GSRI_baseGuer"], _stopGuer] call ace_interact_menu_fnc_addActionToZeus;
+[["ACE_ZeusActions", "GSRI_baseGuer"], _startGuer] call ace_interact_menu_fnc_addActionToZeus;

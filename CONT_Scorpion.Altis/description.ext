@@ -32,44 +32,59 @@ class CfgLogger {
 
 class CfgUnitInsignia
 {
-	class GCAP_Blue
-	{
+	class GCAP_Blue {
 		displayName = "GCAP bleu";
 		author = "GCAP";
 		texture = "insignias\bleu.paa";
 		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
 		textureVehicle = "";
 	};
-	class GCAP_Red
-	{
+	class GCAP_Red {
 		displayName = "GCAP rouge";
 		author = "GCAP";
 		texture = "insignias\rouge.paa";
 		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
 		textureVehicle = "";
 	};
-	class GCAP_Yellow
-	{
+	class GCAP_Yellow {
 		displayName = "GCAP jaune";
 		author = "GCAP";
 		texture = "insignias\jaune.paa";
 		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
 		textureVehicle = "";
 	};
-	class GCAP_Green
-	{
+	class GCAP_Green {
 		displayName = "GCAP vert";
 		author = "GCAP";
 		texture = "insignias\vert.paa";
 		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
 		textureVehicle = "";
 	};
-	class GCAP_GSRI
-	{
+	class GCAP_GSRI {
 		displayName = "GSRI";
 		author = "GSRI";
 		texture = "insignias\gsri.paa";
 		material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat";
 		textureVehicle = "";
 	};
+};
+
+class CfgAmmo {
+
+	class ACE_556x45_Ball_Mk262 {
+		airFriction = -0.0011396;
+		caliber = 0.301;
+		deflecting = 18;
+		hit = 12.401;
+		typicalSpeed = 868.7;
+	};
+
+	class ACE_556x45_Ball_Mk318 {
+		airFriction = -0.00134264;
+		caliber = 0.827;
+		deflecting = 19;
+		hit = 11.406;
+		typicalSpeed = 954.4;
+	};
+
 };

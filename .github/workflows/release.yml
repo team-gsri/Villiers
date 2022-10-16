@@ -11,7 +11,7 @@ jobs:
     runs-on: [self-hosted, arma-tools]
     steps:
       - name: Make mission pbo
-        uses: team-gsri/actions-arma-tools/release-mission@0.1.5
+        uses: team-gsri/actions-arma-tools/release-mission@v0
         with:
           missionName: Scorpion
           source: ./CONT_Scorpion.Altis

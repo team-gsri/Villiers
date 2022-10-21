@@ -1,10 +1,10 @@
-params ["_side", "_markerStart", "_groupClass", "_treshold"];
+params ["_side", "_positionStart", "_positionTarget", "_groupClass", "_treshold"];
 
 _this = createHashMap;
 
 _this set ["_enabled", false];
 _this set ["_side", _side];
-_this set ["_geo", [position _markerStart, position markerTarget, 100] call GSRI_fnc_classSideGeo];
+_this set ["_geo", [_positionStart, _positionTarget, 100] call GSRI_fnc_classSideGeo];
 _this set ["_logger", ["SideManager"] call LOG_fnc_classLogger];
 _this set ["_factories", [
 	[_side, _groupClass, _treshold] call GSRI_fnc_classInfantryFactory

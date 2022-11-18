@@ -68,23 +68,3 @@ class CfgUnitInsignia
 		textureVehicle = "";
 	};
 };
-
-class CfgAmmo {
-
-	class ACE_556x45_Ball_Mk262 {
-		airFriction = -0.0011396;
-		caliber = 0.301;
-		deflecting = 18;
-		hit = 12.401;
-		typicalSpeed = 868.7;
-	};
-
-	class ACE_556x45_Ball_Mk318 {
-		airFriction = -0.00134264;
-		caliber = 0.827;
-		deflecting = 19;
-		hit = 11.406;
-		typicalSpeed = 954.4;
-	};
-
-};

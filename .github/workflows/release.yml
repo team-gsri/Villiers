@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches: [master]
-    paths: ["CONT_Scorpion.Altis/**"]
+    paths: ["CONT_Scorpion.fallujah/**"]
 
 jobs:
   release:
@@ -14,4 +14,4 @@ jobs:
         uses: team-gsri/actions-arma-tools/release-mission@v0
         with:
           missionName: Scorpion
-          source: ./CONT_Scorpion.Altis
+          source: ./CONT_Scorpion.fallujah

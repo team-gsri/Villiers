@@ -57,8 +57,3 @@ private _eastSize3 = ["GSRI_eastSize3", "Compagnie", "", {
 [["ACE_ZeusActions", "GSRI_baseSize"], _eastSize1] call ace_interact_menu_fnc_addActionToZeus;
 [["ACE_ZeusActions", "GSRI_baseSize"], _eastSize2] call ace_interact_menu_fnc_addActionToZeus;
 [["ACE_ZeusActions", "GSRI_baseSize"], _eastSize3] call ace_interact_menu_fnc_addActionToZeus;
-
-private _addRespawn = ["GSRI_addRespawn", "Add Pyrgos Respawn", "", {
-	[west, position loc_respawn_military, "Pyrgos"] call BIS_fnc_addRespawnPosition;
-}, _always] call ace_interact_menu_fnc_createAction;
-[["ACE_ZeusActions"], _addRespawn] call ace_interact_menu_fnc_addActionToZeus;

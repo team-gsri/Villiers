@@ -14,4 +14,4 @@ jobs:
       - name: Lint sources
         uses: jokoho48/sqflint@master
         with:
-          args: --exit e --directory CONT_Scorpion.fallujah
+          args: --exit e --directory CONT_Scorpion.Malden

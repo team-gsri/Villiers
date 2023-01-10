@@ -14,3 +14,5 @@ player addEventHandler ["Respawn", {
 		["ItemMap", "", "TFAR_anprc152", "", "ACE_Altimeter", ""]
 	]);
 }];
+
+[] call GSRI_fnc_initPlayerLocalZeusActions;

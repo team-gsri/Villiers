@@ -1,0 +1,16 @@
+name: publish
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    runs-on: [self-hosted, arma-tools]
+    steps:
+      - name: Make mission pbo
+        uses: team-gsri/actions-arma-tools/release-mission@v0
+        with:
+          missionName: Scorpion
+          source: ./GSRI_Scorpion.Malden

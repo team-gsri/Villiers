@@ -12,23 +12,21 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=510;
+		nextID=535;
 	};
 	class Camera
 	{
-		pos[]={5558.7476,138.73328,10854.516};
-		dir[]={0.84088886,-0.52714264,0.12345618};
-		up[]={0.52170831,0.84966826,0.076595254};
-		aside[]={0.14528006,-4.8366201e-007,-0.98950529};
+		pos[]={5584.4077,123.79211,10843.417};
+		dir[]={0.517102,-0.60175872,0.60869366};
+		up[]={0.38960508,0.7986747,0.45861411};
+		aside[]={0.76212412,1.7236744e-007,-0.64744312};
 	};
 };
 binarizationWanted=0;
-sourceName="CONT_Scorpion";
+sourceName="GSRI_Scorpion";
 addons[]=
 {
 	"A3_Characters_F",
-	"A3_Weapons_F",
-	"gsri_equipment",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Modules_F",
 	"A3_Structures_F_Exp_Walls_BackAlleys",
@@ -75,7 +73,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=33;
+		items=31;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -85,220 +83,207 @@ class AddonsMetaData
 		};
 		class Item1
 		{
-			className="A3_Weapons_F";
-			name="Arma 3 Alpha - Weapons and Accessories";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item2
-		{
-			className="gsri_equipment";
-			name="gsri_equipment";
-			author="www.gsri.team";
-		};
-		class Item3
-		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item2
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item3
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item4
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item7
+		class Item5
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item8
+		class Item6
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item9
+		class Item7
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item10
+		class Item8
 		{
 			className="emr_main";
 			name="Enhanced Movement Rework";
 			author="Simplex Team";
 			url="https://github.com/SceptreOfficial/Enhanced-Movement-Rework";
 		};
-		class Item11
+		class Item9
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item12
+		class Item10
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item13
+		class Item11
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item14
+		class Item12
 		{
 			className="A3_Props_F_Exp";
 			name="Arma 3 Apex - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item15
+		class Item13
 		{
 			className="ace_sitting";
 			name="ACE3 - Sitting";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item16
+		class Item14
 		{
 			className="A3_Structures_F_EPB";
 			name="Arma 3 Adapt Episode - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item17
+		class Item15
 		{
 			className="ace_interaction";
 			name="ACE3 - Interaction";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item18
+		class Item16
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item19
+		class Item17
 		{
 			className="r_unfold";
 			name="r_unfold";
 			author="Rallen";
 		};
-		class Item20
+		class Item18
 		{
 			className="A3_Structures_F_Exp_Civilian";
 			name="Arma 3 Apex - Civilian Buildings";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item19
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item20
 		{
 			className="A3_Structures_F_Bootcamp";
 			name="Arma 3 Bootcamp Update - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item21
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item22
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item25
+		class Item23
 		{
 			className="A3_Structures_F_Enoch_Infrastructure";
 			name="Arma 3 Contact Platform - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item26
+		class Item24
 		{
 			className="A3_Structures_F_Heli";
 			name="Arma 3 Helicopters - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item25
 		{
 			className="A3_Armor_F_Beta";
 			name="Arma 3 Beta - Armored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item26
 		{
 			className="ace_vehicle_damage";
 			name="ACE3 - Vehicle Damage";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item29
+		class Item27
 		{
 			className="kat_misc";
 			name="KAT - KAT - MISC";
 			author="Katalam";
 			url="https://github.com/Tomcat-SG/KAM";
 		};
-		class Item30
+		class Item28
 		{
 			className="acre_sys_intercom";
 			name="ACRE2 - Vehicle Intercom";
 			author="ACRE2Team";
 			url="https://github.com/IDI-Systems/acre2";
 		};
-		class Item31
+		class Item29
 		{
 			className="A3_Soft_F";
 			name="Arma 3 Alpha - Unarmored Land Vehicles";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item30
 		{
 			className="A3_Soft_F_Exp";
 			name="Arma 3 Apex - Unarmored Land Vehicles";
@@ -508,13 +493,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=887;
@@ -553,13 +531,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=889;
@@ -598,13 +569,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=891;
@@ -643,13 +607,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=893;
@@ -688,13 +645,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=895;
@@ -733,13 +683,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=897;
@@ -778,13 +721,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=899;
@@ -823,13 +759,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=901;
@@ -868,13 +797,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=903;
@@ -913,13 +835,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=905;
@@ -958,13 +873,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=907;
@@ -1003,13 +911,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=909;
@@ -1048,13 +949,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=911;
@@ -1093,13 +987,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=913;
@@ -1138,13 +1025,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=915;
@@ -1183,13 +1063,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=917;
@@ -1228,13 +1101,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=919;
@@ -1273,13 +1139,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=921;
@@ -1318,13 +1177,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=923;
@@ -1363,13 +1215,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=925;
@@ -1408,13 +1253,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=927;
@@ -1453,13 +1291,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=929;
@@ -1498,13 +1329,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=931;
@@ -1543,13 +1367,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=933;
@@ -1588,13 +1405,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=935;
@@ -1633,13 +1443,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=937;
@@ -1678,13 +1481,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=939;
@@ -1723,13 +1519,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=941;
@@ -1768,13 +1557,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=943;
@@ -1813,13 +1595,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=945;
@@ -1858,13 +1633,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=947;
@@ -1903,13 +1671,6 @@ class Mission
 								isPlayable=1;
 								class Inventory
 								{
-									class uniform
-									{
-										typeName="GSRI_uniform";
-										isBackpack=0;
-									};
-									map="ItemMap";
-									headgear="GSRI_beret";
 								};
 							};
 							id=949;

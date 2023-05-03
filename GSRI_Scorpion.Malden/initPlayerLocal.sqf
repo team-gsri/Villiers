@@ -7,12 +7,6 @@
 	"BIS_respSpecLists"
 ];
 
-player addEventHandler ["Respawn", {
-	player setUnitLoadout ([
-		[], [], [], ["amf_uniform_01_DA", []],
-		[], [], "AMF_BERET_INFANTERIE", "", [],
-		["ItemMap", "", "TFAR_anprc152", "", "ACE_Altimeter", ""]
-	]);
-}];
+player addEventHandler ["Respawn", { [] call GSRI_fnc_gearAsRegular; }];
 
 [] call GSRI_fnc_initPlayerLocalZeusActions;
